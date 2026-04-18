@@ -11,7 +11,7 @@ const Formulario = () => {
     const actualizarPaciente = usePacienteStore((state) => state.actualizarPaciente)
     const limpiarPacienteActivo = usePacienteStore((state) => state.limpiarPacienteActivo)
 
-    const { register, handleSubmit, formState: { errors }, setValue, reset } = useForm<DraftPatient>()
+    const { register, handleSubmit, formState: { errors }, setValue } = useForm<DraftPatient>()
 
     useEffect(() => {
         if (pacienteActivo) {
